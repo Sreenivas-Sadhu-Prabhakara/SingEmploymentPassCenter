@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designing Singapore's EPSC — A Service Design Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="sg-lion-icon">&#xe800;</div>
+        <span class="nav-logo-text">MOM <span class="nav-logo-accent">Case Study</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#context">Context</a></li>
+        <li><a href="#challenge">Challenge</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#dilemma">Dilemma</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#insights">Insights</a></li>
+      </ul>
+      <div class="nav-badge">
+        <span>EST. 2003</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <header class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-skyline"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="pill pill-red">Singapore</span>
+        <span class="pill pill-white">Ministry of Manpower</span>
+        <span class="pill pill-outline">Service Design</span>
+      </div>
+      <h1 class="hero-title">
+        Designing<br />
+        <em>Singapore's</em><br />
+        <span class="hero-title-accent">Employment Pass<br />Services Centre</span>
+      </h1>
+      <p class="hero-subtitle">
+        How one project manager faced the tension between optimising a queue
+        and daring to eliminate it entirely — redefining what world-class
+        government service means for Singapore's most sought-after global talent.
+      </p>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-label">Project Lead</span>
+          <span class="meta-value">Chu Wei Ming</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Organisation</span>
+          <span class="meta-value">MOM Singapore</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Daily Capacity</span>
+          <span class="meta-value">800 Visitors</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Setting</span>
+          <span class="meta-value">Post-9/11 Era</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#overview" class="btn btn-primary">Explore the Case</a>
+        <a href="#dilemma" class="btn btn-ghost">Jump to the Dilemma</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       OVERVIEW STRIP
+  ══════════════════════════════════════════════════════ -->
+  <section class="overview-strip" id="overview">
+    <div class="container">
+      <div class="strip-grid">
+        <div class="strip-card">
+          <div class="strip-icon icon-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Target Audience</h3>
+          <p>CEOs, directors and highly-educated professionals — Employment Pass (EP) holders and their dependants.</p>
+        </div>
+        <div class="strip-card">
+          <div class="strip-icon icon-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Wait-Time Target</h3>
+          <p>90% of visitors served within <strong>30 minutes</strong>. Actual registration: only 10–15 minutes.</p>
+        </div>
+        <div class="strip-card">
+          <div class="strip-icon icon-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>30 Counters</h3>
+          <p>Capacity-planned using queuing-theory formulas to handle 800 professional visitors at peak load.</p>
+        </div>
+        <div class="strip-card">
+          <div class="strip-icon icon-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>First Impression</h3>
+          <p>For many global professionals, the EPSC is their <em>very first</em> interaction with the Singapore government.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       CONTEXT
+  ══════════════════════════════════════════════════════ -->
+  <section class="section" id="context">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title">The World After 9/11</h2>
+        <p class="section-lead">A global security shock reshaped immigration policy across the world — and Singapore was no exception.</p>
+      </div>
+      <div class="two-col">
+        <div class="context-narrative">
+          <p>In the immediate aftermath of the 11 September 2001 terrorist attacks, governments worldwide moved swiftly to tighten border and identity security. Singapore's Ministry of Manpower was directed to implement <strong>mandatory biometric registration</strong> — fingerprints and photographs — for all Employment Pass holders and their immediate families.</p>
+          <p>This mandate created an immediate operational challenge: the existing <strong>Work Pass Services Centre (WPSC)</strong> was already buckling under the weight of its current caseload. Designed to process low- to semi-skilled foreign workers, the WPSC was infamous for its overcrowding, labyrinthine queues, and wait times that could stretch to <strong>four hours on the worst days</strong>.</p>
+          <p>But the new Employment Pass holders were a fundamentally different clientele — and a far more strategically important one.</p>
+
+          <blockquote class="pull-quote">
+            <p>"These professionals are exactly the global talent Singapore needs to sustain its economic competitiveness. The centre had to reflect that."</p>
+          </blockquote>
+        </div>
+        <div class="context-compare">
+          <div class="compare-card compare-old">
+            <div class="compare-label">Old Model — WPSC</div>
+            <ul>
+              <li>Low- to semi-skilled workers</li>
+              <li>Wait times up to <strong>4 hours</strong></li>
+              <li>Severe overcrowding</li>
+              <li>Chaotic, inefficient process</li>
+              <li>Functional but uninspiring</li>
+            </ul>
+          </div>
+          <div class="compare-arrow">→</div>
+          <div class="compare-card compare-new">
+            <div class="compare-label">New Model — EPSC</div>
+            <ul>
+              <li>CEOs, directors, global talent</li>
+              <li>Target wait: <strong>&lt; 30 min</strong></li>
+              <li>Capacity for 800/day</li>
+              <li>Streamlined, dignified process</li>
+              <li>Premium government experience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       THE PROTAGONIST
+  ══════════════════════════════════════════════════════ -->
+  <section class="section section-dark" id="protagonist">
+    <div class="container">
+      <div class="protagonist-wrapper">
+        <div class="protagonist-badge">
+          <div class="badge-ring"></div>
+          <div class="badge-initials">CWM</div>
+        </div>
+        <div class="protagonist-content">
+          <span class="section-tag">The Project Lead</span>
+          <h2>Chu Wei Ming</h2>
+          <p class="role-title">Deputy Director of Operations, Ministry of Manpower</p>
+          <p>Wei Ming bore the full weight of this landmark project. His mandate: design a service centre that was not merely functional but representative of Singapore's ambitions — a space that communicated respect, efficiency, and modernity to the world's most mobile professionals.</p>
+          <p>He approached the challenge methodically, applying rigorous <strong>capacity planning</strong>, phased testing, and stakeholder management. Yet all his careful preparation could not fully anticipate the moment management would challenge not just his design — but the fundamental assumptions underneath it.</p>
+          <div class="protagonist-tags">
+            <span class="tag">Capacity Planning</span>
+            <span class="tag">Stakeholder Management</span>
+            <span class="tag">Service Design</span>
+            <span class="tag">Public Administration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       UNIQUE CHALLENGES
+  ══════════════════════════════════════════════════════ -->
+  <section class="section" id="challenge">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Unique Problems</span>
+        <h2 class="section-title">The Challenges Wei Ming Faced</h2>
+        <p class="section-lead">Three distinct obstacles threatened to derail the project before it even opened its doors.</p>
+      </div>
+      <div class="challenges-grid">
+
+        <div class="challenge-card challenge-featured">
+          <div class="challenge-number">01</div>
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>The Sensitivity of Biometrics</h3>
+          <p>Fingerprinting a corporate executive carries entirely different connotations than processing a manual worker. For highly educated, internationally mobile professionals, biometric collection felt invasive — an affront to their status and privacy.</p>
+          <p>The team had to engineer a registration process that collected the required data <strong>with complete discretion and dignity</strong>, reframing the interaction as a professional formality rather than a security screening.</p>
+          <div class="challenge-insight">
+            <span class="insight-label">Key Tension</span>
+            <span>Security mandate vs. executive dignity</span>
+          </div>
+        </div>
+
+        <div class="challenge-card">
+          <div class="challenge-number">02</div>
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Stakeholder Resistance</h3>
+          <p>During the offsite pilot — registering 20,000 individuals across 20 large employers — several companies declined to participate. The additional administrative burden was simply not welcome. The team had to manage corporate pushback while still meeting biometric registration targets.</p>
+          <div class="challenge-insight">
+            <span class="insight-label">Scale</span>
+            <span>20 employers · 20,000 registrations</span>
+          </div>
+        </div>
+
+        <div class="challenge-card">
+          <div class="challenge-number">03</div>
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>The Timing Crunch</h3>
+          <p>When management rejected the floor plan, Wei Ming faced the holiday period — Christmas followed immediately by Chinese New Year. A full redesign would push the project back by months. Incremental changes risked failing to meet the elevated expectations management had set.</p>
+          <div class="challenge-insight">
+            <span class="insight-label">Constraint</span>
+            <span>Months of delay vs. inadequate patch</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       DESIGN APPROACH
+  ══════════════════════════════════════════════════════ -->
+  <section class="section section-dark" id="design">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Design</span>
+        <h2 class="section-title">Engineering a Premium Experience</h2>
+        <p class="section-lead">Wei Ming's team brought rigour, data, and creativity to every dimension of the centre's design.</p>
+      </div>
+
+      <div class="design-timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker marker-red"></div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 1</div>
+            <h3>Capacity Planning</h3>
+            <p>Using queuing theory and capacity formulas, the team determined that <strong>30 service counters</strong> were required to handle peak daily volumes. The performance SLA: 90% of all visitors wait no longer than 30 minutes, with the actual face-to-face registration taking only 10–15 minutes.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker marker-white"></div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 2</div>
+            <h3>Offsite Pilot Programme</h3>
+            <p>Before the centre opened, the team conducted an offsite registration exercise with <strong>20 large corporations</strong>, successfully fingerprinting and photographing 20,000 EP holders. This allowed them to stress-test the biometric routines, identify workflow gaps, and refine staff training in a lower-stakes environment.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker marker-red"></div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 3</div>
+            <h3>Technology Procurement</h3>
+            <p>The project required significant IT system enhancements — including the procurement of <strong>high-tech laser card engravers</strong> — to produce the new biometric Employment Pass cards. This was a first for Singapore's work pass system.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker marker-white"></div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 4</div>
+            <h3>Spatial & Aesthetic Design</h3>
+            <p>To deliberately break from the "dull government office" aesthetic, the design team introduced <strong>vibrant colour-coded zones</strong>, an open layout that kept families together, wide windows framing the Singapore skyline, and premium finishes throughout. The goal: a space that felt closer to a high-end bank or premium airline lounge than a government office.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-num">800</span>
+          <span class="stat-desc">Visitors per day</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">30</span>
+          <span class="stat-desc">Service counters</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">90%</span>
+          <span class="stat-desc">Served within 30 min</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">10–15</span>
+          <span class="stat-desc">Min. registration time</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">20K</span>
+          <span class="stat-desc">Pilot registrations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       MOMENTS OF TRUTH
+  ══════════════════════════════════════════════════════ -->
+  <section class="section" id="moments">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Moments of Truth</span>
+        <h2 class="section-title">When Everything Is on the Line</h2>
+        <p class="section-lead">Two pivotal moments defined the entire project — and both were far bigger than a floor plan.</p>
+      </div>
+
+      <div class="mot-grid">
+        <div class="mot-card">
+          <div class="mot-number">I</div>
+          <div class="mot-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Singapore's First Impression</h3>
+          <p>For many of the world's most sought-after knowledge workers, a visit to the EPSC represents the <strong>very first direct encounter with the Singapore government</strong>. What they experience in that building shapes their view of Singapore as a place to live, build a career, and raise a family.</p>
+          <p>In this framing, the EPSC is not merely a service centre — it is a piece of national brand infrastructure.</p>
+          <div class="mot-stakes">
+            <span class="stakes-label">What's at stake</span>
+            <span>Singapore's reputation as a premier destination for global talent</span>
+          </div>
+        </div>
+
+        <div class="mot-card mot-card-accent">
+          <div class="mot-number">II</div>
+          <div class="mot-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>The Steering Committee Meeting</h3>
+          <p>Wei Ming entered the room <em>quietly satisfied</em>. His team had produced a lean, rigorously optimised floor plan backed by data and queuing science. The numbers were good. The benchmarks were met.</p>
+          <p>Management's response changed everything. Instead of approving the design, they asked the question that reframed the entire project:</p>
+          <blockquote class="mot-quote">
+            "Why do they need a visitor queue at the reception counter? Why were there so many rows of seats? <strong>Most importantly — why do visitors have to wait at all?</strong>"
+          </blockquote>
+          <div class="mot-stakes">
+            <span class="stakes-label">The Shift</span>
+            <span>From <em>managing</em> a queue → questioning the <em>existence</em> of a queue</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       THE DILEMMA
+  ══════════════════════════════════════════════════════ -->
+  <section class="section section-dilemma" id="dilemma">
+    <div class="dilemma-bg">
+      <div class="dilemma-glow"></div>
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag section-tag-light">The Dilemma</span>
+        <h2 class="section-title">The Paradigm Clash</h2>
+      </div>
+
+      <div class="dilemma-content">
+        <div class="dilemma-question">
+          <div class="dq-header">The Management Challenge</div>
+          <p>MOM management did not ask Wei Ming to make the queues shorter. They asked <em>why there were queues at all.</em> For a centre serving executives who command hundreds of people and fly business class around the world, the very concept of "waiting in rows of seats" clashed with the premium experience management envisioned.</p>
+          <p>This was not a critique of his numbers. It was a <strong>challenge to his fundamental mental model of what a government service centre should be.</strong></p>
+        </div>
+
+        <div class="dilemma-fork">
+          <div class="fork-header">Wei Ming's Two Paths</div>
+          <div class="fork-options">
+            <div class="fork-option fork-option-a">
+              <div class="fork-label">Path A</div>
+              <h4>Incremental Tweaks</h4>
+              <p>Make cosmetic changes to the existing floor plan. Faster to implement, won't delay the project launch. But risks delivering a result that still looks like a "clinic" and fails to meet management's elevated ambitions.</p>
+              <div class="fork-risk risk-medium">
+                <span>Risk: Medium</span>
+              </div>
+            </div>
+            <div class="fork-vs">OR</div>
+            <div class="fork-option fork-option-b">
+              <div class="fork-label">Path B</div>
+              <h4>Complete Redesign</h4>
+              <p>Scrap the floor plan entirely and rebuild from a new first principle: <em>eliminate the queue, not just manage it.</em> Potentially transformative, but requires months of additional work — right through Christmas and Chinese New Year.</p>
+              <div class="fork-risk risk-high">
+                <span>Risk: High</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dilemma-reframe">
+          <div class="reframe-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          </div>
+          <div class="reframe-text">
+            <h3>The Deeper Question</h3>
+            <p>Management's challenge forced Wei Ming to confront a profound question in service design: <strong>is it ever acceptable for a premium service to make customers wait?</strong> For an airline, the answer was once "yes" — until lounges, fast-track lanes, and pre-boarding changed the paradigm entirely. Could a government service centre make the same leap?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       KEY INSIGHTS
+  ══════════════════════════════════════════════════════ -->
+  <section class="section" id="insights">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lessons</span>
+        <h2 class="section-title">Key Insights for Service Design</h2>
+        <p class="section-lead">What this case teaches practitioners about designing public services for high-value stakeholders.</p>
+      </div>
+
+      <div class="insights-grid">
+        <div class="insight-card">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Know Your Customer Segment</h3>
+          <p>The WPSC and EPSC existed in the same ministry but served incompatible customer expectations. Solutions that work for one segment can actively harm another. Rigorous segmentation is foundational.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h3>Efficiency ≠ Excellence</h3>
+          <p>Optimising a bad process makes it a faster bad process. The EPSC case shows that data-driven process improvement must still be anchored to a human-centred vision of what "good" looks like.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3>Question the Constraint</h3>
+          <p>Wei Ming's team accepted "a waiting room is necessary" as given. Management rejected that premise. The best service designs don't optimise constraints — they eliminate them.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Place as Brand Signal</h3>
+          <p>The physical space of the EPSC communicates Singapore's values to the world before a single word is spoken. Governments underestimate how powerfully built environments shape national brand perception.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Pilot Early, Pilot Real</h3>
+          <p>The offsite fingerprinting exercise with 20,000 registrations was a masterstroke in de-risking. Testing in a real environment — not a lab — revealed operational gaps that simulation never would.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Align Stakeholders Early</h3>
+          <p>A Steering Committee surprise at the final presentation is a signal of insufficient upstream alignment. In high-stakes public service projects, management's vision must be integrated at the design stage — not revealed at the approval stage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       SOLUTION
+  ══════════════════════════════════════════════════════ -->
+  <section class="section" id="solution">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Strategic Response</span>
+        <h2 class="section-title">The Paradigm Shift Solution</h2>
+        <p class="section-lead">Wei Ming's path forward: not a full redesign, but a radical operational and aesthetic transformation that reframes the EPSC from a walk-in clinic to a premium appointment-only experience.</p>
+      </div>
+
+      <!-- Four Pillars of Change -->
+      <div class="solution-pillars">
+        <div class="pillar">
+          <div class="pillar-header">
+            <span class="pillar-number">01</span>
+            <h3>From Walk-In to Appointment-Only</h3>
+          </div>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><rect x="8" y="14" width="2" height="2"/><rect x="14" y="14" width="2" height="2"/><rect x="8" y="18" width="2" height="2"/><rect x="14" y="18" width="2" height="2"/></svg>
+          </div>
+          <p>The root cause of the massive waiting areas was the assumption that visitors would arrive unpredictably in surges during peak hours. A mandatory appointment system gives the EPSC complete control over visitor flow, <strong>eliminating the need to design for unpredictable crowds</strong>.</p>
+          <div class="pillar-benefit">
+            <span class="benefit-icon">✓</span>
+            <span>No more peak-load surges; flows become predictable and even</span>
+          </div>
+          <div class="pillar-benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Reduces required counter capacity; transforms 30 to perhaps 8–10 efficient stations</span>
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-header">
+            <span class="pillar-number">02</span>
+            <h3>Eliminate the Reception Queue</h3>
+          </div>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11H3v2h6v-2z"/><path d="M21 11h-6v2h6v-2z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/></svg>
+          </div>
+          <p>Management's question — "Why do they need a visitor queue at the reception counter?" — exposes a design failure. With pre-booked appointments, visitors can <strong>check in via self-service kiosks or be greeted immediately by a concierge</strong>, completely eliminating the reception bottleneck.</p>
+          <div class="pillar-benefit">
+            <span class="benefit-icon">✓</span>
+            <span>First touchpoint: premium concierge greeting, not a queue line</span>
+          </div>
+          <div class="pillar-benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Self-service kiosks streamline check-in; freeing staff for higher-value interactions</span>
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-header">
+            <span class="pillar-number">03</span>
+            <h3>Premium Lounge, Not Clinic Seating</h3>
+          </div>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 6h20v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6z"/><rect x="2" y="6" width="5" height="6"/><rect x="8" y="6" width="5" height="6"/><rect x="14" y="6" width="6" height="6"/></svg>
+          </div>
+          <p>By controlling visitor flow through appointments, the massive banks of 100+ functional waiting-room chairs can be removed entirely. The space transforms into <strong>intimate, high-quality lounge clusters</strong> offering privacy for families and matching the expectations of CEOs and executives.</p>
+          <div class="pillar-benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Premium furniture: comfortable seating, coffee tables, natural light</span>
+          </div>
+          <div class="pillar-benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Family-focused design: small pods instead of rows; dignity for all occupants</span>
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-header">
+            <span class="pillar-number">04</span>
+            <h3>Structural Compromise on Timeline</h3>
+          </div>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <p>Wei Ming doesn't need to start from scratch. He keeps the <strong>back-end technology</strong> (IT systems, laser card engravers, integrated biometric workflow) but radically transforms the <strong>front-end operational policy</strong> (appointment system) and <strong>physical layout</strong> (furniture and seating design).</p>
+          <div class="pillar-benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Avoids vendor restart; leverages existing procured technology</span>
+          </div>
+          <div class="pillar-benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Faster implementation; manageable redesign during holiday period</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Impact comparison -->
+      <div class="solution-comparison">
+        <div class="comparison-header">
+          <span class="section-tag">Before & After</span>
+          <h3>The Transformation at a Glance</h3>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-row">
+            <div class="comp-aspect">Visitor Arrival</div>
+            <div class="comp-before">Unpredictable surges, peak load ~800/day</div>
+            <div class="comp-arrow">→</div>
+            <div class="comp-after">Scheduled appointments, ~40–60/day in steady flow</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-aspect">Reception Experience</div>
+            <div class="comp-before">Queue line, wait for queue ticket</div>
+            <div class="comp-arrow">→</div>
+            <div class="comp-after">Concierge greeting or instant self-service kiosk check-in</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-aspect">Service Counters</div>
+            <div class="comp-before">30 counters required (capacity planning)</div>
+            <div class="comp-arrow">→</div>
+            <div class="comp-after">8–10 premium, specialized stations</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-aspect">Waiting Area</div>
+            <div class="comp-before">100+ functional chairs in rows (clinic look)</div>
+            <div class="comp-arrow">→</div>
+            <div class="comp-after">3–4 premium lounge clusters; family-focused pods</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-aspect">Typical Wait</div>
+            <div class="comp-before">Target: 90% within 30 min</div>
+            <div class="comp-arrow">→</div>
+            <div class="comp-after">Near-zero wait; known appointment time</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-aspect">Visitor Psychology</div>
+            <div class="comp-before">Government office / clinic aesthetic</div>
+            <div class="comp-arrow">→</div>
+            <div class="comp-after">Premium hotel lounge / high-end bank experience</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-aspect">Technology Reuse</div>
+            <div class="comp-before">Laser engravers, biometric systems, IT infrastructure</div>
+            <div class="comp-arrow">→</div>
+            <div class="comp-after">All systems retained; optimized for lower throughput</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-aspect">Timeline Impact</div>
+            <div class="comp-before">Project deadline approaching</div>
+            <div class="comp-arrow">→</div>
+            <div class="comp-after">Feasible redesign during holiday; policy + furniture only</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution pillars insight -->
+      <div class="solution-insight-box">
+        <div class="insight-header">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/></svg>
+          <h3>The Core Insight</h3>
+        </div>
+        <p>The "clinic problem" was never about the floor plan. It was about <strong>accepting unpredictability as inevitable.</strong> By shifting to appointments, Wei Ming doesn't just redesign the space — he reframes the operational model. The physical transformation (fewer chairs, premium design) becomes a natural consequence of the operational shift (controlled flow).</p>
+        <p>This is the kind of <em>paradigm-level thinking</em> that management was signalling for. Not: "How can we design a better waiting room?" But: "Do we need a waiting room at all?"</p>
+      </div>
+
+      <!-- Risk & Mitigation -->
+      <div class="solution-risks">
+        <div class="risks-header">
+          <span class="section-tag">Implementation Considerations</span>
+          <h3>Challenges & Mitigations</h3>
+        </div>
+        <div class="risks-grid">
+          <div class="risk-item">
+            <div class="risk-icon risk-icon-1">⚠</div>
+            <h4>User Adoption of Appointment System</h4>
+            <p><strong>Risk:</strong> Global professionals may resist pre-booking; some expect walk-in flexibility.</p>
+            <p><strong>Mitigation:</strong> Mobile app for easy booking, 24-hour advance appointment slots, emergency walk-in queue for urgent cases (minimal capacity).</p>
+          </div>
+          <div class="risk-item">
+            <div class="risk-icon risk-icon-2">⚠</div>
+            <h4>No-Show & Late-Arrival Rates</h4>
+            <p><strong>Risk:</strong> Busy executives may miss appointments or arrive late, creating gaps or bottlenecks.</p>
+            <p><strong>Mitigation:</strong> Reminder notifications (SMS/email), 15-min grace period, buffer slots built into scheduling.</p>
+          </div>
+          <div class="risk-item">
+            <div class="risk-icon risk-icon-3">⚠</div>
+            <h4>Vendor Buy-In & IT System Changes</h4>
+            <p><strong>Risk:</strong> Existing system was designed for walk-in queues; appointment logic requires system reconfiguration.</p>
+            <p><strong>Mitigation:</strong> Appointment module is a workflow overlay, not a core IT rebuild; can be implemented incrementally.</p>
+          </div>
+          <div class="risk-item">
+            <div class="risk-icon risk-icon-4">⚠</div>
+            <h4>Corporate Coordination for Family Members</h4>
+            <p><strong>Risk:</strong> EP holder + family members need coordinated appointments; logistics complexity.</p>
+            <p><strong>Mitigation:</strong> Family-bundled appointment slots; one registration, all family members checked in together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       CLOSING CALL-OUT
+  ══════════════════════════════════════════════════════ -->
+  <section class="section section-callout">
+    <div class="container">
+      <div class="callout-box">
+        <div class="callout-sg-flag">
+          <div class="flag-red"></div>
+          <div class="flag-white">
+            <span class="flag-crescent">☽</span>
+            <span class="flag-stars">✦ ✦ ✦ ✦ ✦</span>
+          </div>
+        </div>
+        <div class="callout-text">
+          <h2>A Question That Transcends This Project</h2>
+          <p>The EPSC case is ultimately about the courage to ask better questions. Wei Ming optimised for what existed. Management imagined what could exist. In a world where Singapore competes fiercely for global talent, the difference between those two mindsets is the difference between a good government office and a truly world-class welcome.</p>
+          <p class="callout-sub">As Wei Ming faces his dilemma with the clock ticking, one thing is clear: the answer he chooses will say as much about Singapore's ambitions as the building itself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">MOM <span>Case Study</span></div>
+          <p>An academic exploration of service design, public administration, and national competitiveness.</p>
+          <div class="footer-sg-badge">
+            <span>🇸🇬</span> Singapore
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#context">Background</a></li>
+            <li><a href="#challenge">Challenges</a></li>
+            <li><a href="#design">Design Approach</a></li>
+            <li><a href="#moments">Moments of Truth</a></li>
+            <li><a href="#dilemma">The Dilemma</a></li>
+            <li><a href="#solution">The Solution</a></li>
+            <li><a href="#insights">Key Insights</a></li>
+          </ul>
+        </div>
+        <div class="footer-meta">
+          <h4>Case Details</h4>
+          <ul>
+            <li><strong>Subject:</strong> Employment Pass Services Centre</li>
+            <li><strong>Organisation:</strong> Ministry of Manpower, Singapore</li>
+            <li><strong>Protagonist:</strong> Chu Wei Ming</li>
+            <li><strong>Context:</strong> Post-9/11 biometric mandate</li>
+            <li><strong>Discipline:</strong> Service Design · Public Admin</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Case study material for educational purposes. Singapore government branding elements used respectfully for academic illustration.</p>
+        <p class="footer-credit">Presented with ♥ for excellence in public service design.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
