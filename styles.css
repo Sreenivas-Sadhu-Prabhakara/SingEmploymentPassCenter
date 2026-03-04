@@ -1531,8 +1531,15 @@ a:hover { color: var(--text-100); }
   margin-bottom: 4rem;
 }
 
+.solution-pillars .pillar:last-child {
+  grid-column: 1 / -1;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 @media (max-width: 900px) {
   .solution-pillars { grid-template-columns: 1fr; }
+  .solution-pillars .pillar:last-child { max-width: 100%; grid-column: 1; }
 }
 
 .pillar {
