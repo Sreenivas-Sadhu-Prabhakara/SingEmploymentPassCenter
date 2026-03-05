@@ -1843,3 +1843,230 @@ a:hover { color: var(--text-100); }
 
 /* Footer link updates */
 .footer-links ul li a:hover { color: var(--sg-red); }
+
+/* ══════════════════════════════════════════════════════
+   OMNICHANNEL & DIGITAL TRANSFORMATION SECTION
+══════════════════════════════════════════════════════ */
+.omnichannel-strategy {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--bg-500);
+}
+
+.strategy-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.strategy-header p {
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  color: var(--text-200);
+}
+
+/* Channels Grid */
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1000px) {
+  .channels-grid { grid-template-columns: 1fr; }
+}
+
+.channel-card {
+  background: linear-gradient(135deg, rgba(239, 51, 64, 0.05), rgba(45, 212, 191, 0.05));
+  border: 1px solid var(--bg-500);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: all var(--t-med);
+  overflow: hidden;
+}
+
+.channel-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--sg-red), var(--accent-teal));
+  opacity: 0;
+  transition: opacity var(--t-med);
+}
+
+.channel-card:hover {
+  border-color: rgba(239, 51, 64, 0.3);
+  background: linear-gradient(135deg, rgba(239, 51, 64, 0.1), rgba(45, 212, 191, 0.08));
+  transform: translateY(-4px);
+}
+
+.channel-card:hover::before { opacity: 1; }
+
+.channel-number {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--bg-600);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.channel-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-100);
+}
+
+.channel-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.feature-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.feature-item strong {
+  display: block;
+  color: var(--text-100);
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.feature-item p {
+  font-size: 0.85rem;
+  color: var(--text-300);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Best Practices Table */
+.best-practices-table {
+  background: var(--bg-800);
+  border: 1px solid var(--bg-500);
+  border-radius: var(--radius-xl);
+  padding: 3rem 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.practices-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.practices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .practices-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .practices-grid { grid-template-columns: 1fr; }
+}
+
+.practice-metric {
+  background: var(--bg-700);
+  border: 1px solid var(--bg-600);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  transition: all var(--t-med);
+}
+
+.practice-metric:hover {
+  border-color: rgba(239, 51, 64, 0.3);
+  background: var(--bg-600);
+  transform: translateY(-2px);
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-300);
+  margin-bottom: 0.75rem;
+  display: block;
+  font-weight: 600;
+}
+
+.metric-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--sg-red);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.metric-desc {
+  font-size: 0.8rem;
+  color: var(--text-300);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Omnichannel Insight Box */
+.omnichannel-insight {
+  background: var(--bg-800);
+  border: 2px solid rgba(239, 51, 64, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  margin-top: 3rem;
+}
+
+.omnichannel-insight .insight-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.omnichannel-insight svg {
+  width: 32px;
+  height: 32px;
+  color: var(--sg-red);
+  flex-shrink: 0;
+}
+
+.omnichannel-insight h3 {
+  margin: 0;
+  color: var(--text-100);
+  font-size: 1.2rem;
+}
+
+.omnichannel-insight p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: var(--text-200);
+}
+
+.omnichannel-insight p:last-child { margin-bottom: 0; }
+
+.omnichannel-insight strong {
+  color: var(--sg-red);
+  font-weight: 600;
+}
+
+.omnichannel-insight em {
+  color: var(--accent-teal);
+  font-style: italic;
+}

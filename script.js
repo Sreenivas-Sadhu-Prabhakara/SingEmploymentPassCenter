@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
     '.strip-card, .challenge-card, .timeline-item, .stat-item, ' +
     '.mot-card, .insight-card, .fork-option, .dilemma-reframe, ' +
     '.context-compare, .protagonist-wrapper, .callout-box, ' +
-    '.pillar, .comparison-row, .solution-insight-box, .risk-item'
+    '.pillar, .comparison-row, .solution-insight-box, .risk-item, ' +
+    '.channel-card, .practice-metric, .omnichannel-insight'
   );
 
   revealEls.forEach((el, i) => {
