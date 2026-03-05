@@ -240,6 +240,67 @@ All files are production-ready and fully accessible.
 
 **Website Status:** ✅ Complete and pushed to GitHub  
 **Repository:** github.com/Sreenivas-Sadhu-Prabhakara/SingEmploymentPassCenter  
-**Last Updated:** March 4, 2026  
+**Last Updated:** March 5, 2026  
 **Theme:** Dark, Singapore-inspired, premium aesthetic
+
+---
+
+## The Omnichannel & Digital Transformation Framework
+
+### Vision
+
+Beyond the physical redesign, Wei Ming's vision integrates a **seamless digital ecosystem** that serves global professionals across multiple touchpoints — before, during, and after their visit. This transforms the EPSC from a location-bound facility into a **24/7 digital service with optional in-centre finalization.**
+
+### Three Integrated Channels
+
+#### 1. Online Pre-Arrival Channel
+
+**Digital-first journey begins before the visit:**
+
+- **Mobile App & Web Portal:** Book appointments, submit documents, track status in real-time
+- **Digital Document Submission:** Pre-upload passports, employment letters, biometric photos (90% of processing completed before arrival)
+- **Multilingual Interface:** Support for 10+ languages serving global audiences
+- **Touchless Processing:** No physical documents needed until final biometric capture
+
+#### 2. Seamless In-Centre Experience
+
+**Premium, brief in-person visit:**
+
+- **Self-Service Kiosk Check-In:** Biometric verification, document validation, real-time queue updates
+- **Premium Concierge Service:** Personal assistance for complex cases, family coordination, accessibility support
+- **Optimized Processing:** 8–10 specialized service stations; average visit under 10 minutes
+- **Technology Integration:** Laser card engravers, biometric systems, automated workflows all optimized for reduced throughput
+
+#### 3. Post-Visit Digital Engagement
+
+**Continuous digital relationship:**
+
+- **Instant Digital Confirmation:** Employment pass issued digitally via email + SMS; physical card optional
+- **Online Renewal Portal:** Minimal repeat in-centre visits required for renewals and updates
+- **24/7 Support Chatbot:** AI-powered assistant for FAQs, status checks, guidance
+
+### Best Practice Performance Benchmarks
+
+| Feature | Target |
+| --- | --- |
+| **Waiting Time** | Near Zero |
+| **Visit Duration** | < 10 minutes |
+| **Queue System** | Appointment-Based |
+| **Service Model** | Digital-First |
+| **User Experience** | Concierge Service |
+| **Data Processing** | Pre-Arrival Submission |
+
+### Key Outcomes
+
+1. **Global Professional Convenience:** Complete 90% of journey online; only 10-minute in-person visit
+2. **Operational Efficiency:** Predictable flows, reduced physical infrastructure needs
+3. **Premium Experience:** From government office to high-end concierge service
+4. **Security & Compliance:** Rigorous biometric and document processing maintained throughout
+5. **Scalability:** Digital infrastructure supports future growth without physical expansion
+
+### The Omnichannel Competitive Advantage
+
+This integrated digital-physical model positions Singapore's EPSC as a **world-class benchmark for government digital transformation**. Rather than forcing a choice between convenience and security, the omnichannel framework delivers both — allowing global talent to experience seamless, frictionless service while maintaining Singapore's commitment to rigorous employment standards.
+
+---
 
